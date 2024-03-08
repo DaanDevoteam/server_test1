@@ -38,7 +38,7 @@ app.post('/get-bsn', async (req, res) => {
     });
 
     if (!tokenResponse.ok) {
-      throw new Error(`HTTP error when fetching token! status: ${tokenResponse.status}`);
+      throw new Error(`HTTP error when ftching token! status: ${tokenResponse.status}`);
     }
 
     const { access_token } = await tokenResponse.json();
